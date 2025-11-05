@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal)
-        .copyWith(secondary: [400]Colors.tealAccent),
+        .copyWith(secondary: Colors.tealAccent[400]),
       ),
       home: MyHomePage(),
     );

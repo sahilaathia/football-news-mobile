@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:football_news_mobile/screens/newslist_form.dart';
 
+class ItemHomepage {
+  final String name;
+  final IconData icon;
+
+  ItemHomepage(this.name, this.icon);
+}
+
 class ItemCard extends StatelessWidget {
   // Menampilkan kartu dengan ikon dan nama.
 
@@ -30,7 +37,7 @@ class ItemCard extends StatelessWidget {
 
           // Navigate ke route yang sesuai (tergantung jenis tombol)
           if (item.name == "Add News") {
-            // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup NewsFormPage.
+            // Navigasi ke MaterialPageRoute yang mencakup NewsFormPage
             Navigator.push(
               context,
               MaterialPageRoute(
